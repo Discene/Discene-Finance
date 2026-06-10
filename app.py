@@ -88,7 +88,7 @@ amortization_years = st.sidebar.slider(
 )
 mat_staff_cost = st.sidebar.number_input(
     "成熟期团队年度总薪酬（元）", value=1000000,
-    help="包含扩招后的正式员工（管理、研学导师、摄影后期、媒体运营）及兼职的人力总开支。"
+    help="包含扩招后的正式员工（管理、研学导师、摄影后期、媒体运营、财务）及兼职的人力总开支。"
 )
 cafe_cultural_cost_rate = st.sidebar.slider(
     "餐饮文创商品成本率 (%)", 10, 50, 30,
@@ -96,7 +96,7 @@ cafe_cultural_cost_rate = st.sidebar.slider(
 ) / 100
 study_material_rate = st.sidebar.slider(
     "研学课程活动耗材及设备研发维护投入比例 (%)", 10, 30, 20,
-    help="公式：研学整体收入 × 比例。用于手工材料、标本、户外工具包、设备研发、维护等。"
+    help="公式：研学整体收入 × 比例。用于手工材料、标本、户外工具包、设备研发、维护、预约系统开发等。"
 ) / 100
 mat_operating_cost = st.sidebar.number_input(
     "年度空间运营能源及营销费（元）", value=300000,
